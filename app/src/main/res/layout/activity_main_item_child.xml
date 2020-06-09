@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="10dp"
-        android:text="0.1mg 小红瓶 定制版"
+        android:text="第7小组天府检测项目"
         android:textColor="#aaaaaa"
         android:textSize="12sp"
         app:layout_constraintLeft_toRightOf="@+id/draw_goods"
