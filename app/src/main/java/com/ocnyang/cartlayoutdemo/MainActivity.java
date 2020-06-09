@@ -214,13 +214,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         for (int i = 0; i < 10; i++) {
             ShopBean shopBean = new ShopBean();
-            shopBean.setShop_name("解忧杂货铺 第" + (i + 1) + "分店");
+            shopBean.setShop_name("第七组天府 第" + (i + 1) + "分店");
             shopBean.setItemType(CartItemBean.TYPE_GROUP);
             cartItemBeans.add(shopBean);
 
             for (int j = 0; j < (i + 5); j++) {
                 GoodsBean goodsBean = new GoodsBean();
-                goodsBean.setGoods_name("忘忧水 " + (j + 1) + " 代");
+                goodsBean.setGoods_name("天府检测 " + (j + 1) + " 代");
                 goodsBean.setItemType(CartItemBean.TYPE_CHILD);
                 goodsBean.setItemId((j + 1) * 10 + j);
                 goodsBean.setGoods_price(j + 1);
