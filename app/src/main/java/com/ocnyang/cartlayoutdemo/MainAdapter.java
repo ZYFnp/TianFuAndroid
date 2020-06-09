@@ -1,5 +1,6 @@
 package com.ocnyang.cartlayoutdemo;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.view.View;
@@ -59,7 +60,7 @@ public class MainAdapter extends CartAdapter<CartViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CartViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull CartViewHolder holder, @SuppressLint("RecyclerView") final int position) {
         super.onBindViewHolder(holder, position);
         if (holder instanceof ChildViewHolder) {
             ChildViewHolder childViewHolder = (ChildViewHolder) holder;
