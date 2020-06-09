@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="323dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="6dp">
+
+    </SearchView>
+
+    <ImageView
+        android:id="@+id/houtuo"
+        android:layout_width="66dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        app:layout_constraintEnd_toStartOf="@+id/searchView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/jiancewang"
+        android:layout_width="409dp"
+        android:layout_height="171dp"
+        android:src="@drawable/tianfuwang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        tools:srcCompat="@drawable/tianfuwang" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="407dp"
+        android:layout_height="199dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jiancewang">
+
+        <ImageView
+            android:id="@+id/建筑材料"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/工程检测"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_round_home_work_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/工程检测"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/电子产品"
+            app:layout_constraintStart_toEndOf="@+id/建筑材料"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_outline_build_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/电子产品"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/公共场所"
+            app:layout_constraintStart_toEndOf="@+id/工程检测"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_computer_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/公共场所"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/基因检测"
+            app:layout_constraintStart_toEndOf="@+id/电子产品"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_account_balance_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/基因检测"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/公共场所"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_location_city_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/jianzhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="建筑材料"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/建筑材料"
+            android:layout_marginLeft="8dp" />
+
+        <TextView
+            android:id="@+id/gongcheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="2dp"
+            android:text="工程检测"
+            app:layout_constraintStart_toEndOf="@+id/jianzhu"
+            app:layout_constraintTop_toBottomOf="@+id/工程检测"
+            android:layout_marginLeft="24dp" />
+
+        <TextView
+            android:id="@+id/dianzi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="3dp"
+            android:text="电子产品"
+            app:layout_constraintStart_toEndOf="@+id/gongcheng"
+            app:layout_constraintTop_toBottomOf="@+id/电子产品"
+            android:layout_marginLeft="32dp" />
+
+        <TextView
+            android:id="@+id/gonggong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="3dp"
+            android:text="公共场所"
+            app:layout_constraintStart_toEndOf="@+id/dianzi"
+            app:layout_constraintTop_toBottomOf="@+id/公共场所"
+            android:layout_marginLeft="28dp" />
+
+        <TextView
+            android:id="@+id/jiyin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="3dp"
+            android:text="基因检测"
+            app:layout_constraintStart_toEndOf="@+id/gonggong"
+            app:layout_constraintTop_toBottomOf="@+id/基因检测"
+            android:layout_marginLeft="24dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jianzhu"
+            app:srcCompat="@drawable/ic_baseline_spa_24"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_marginRight="8dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/gongcheng"
+            app:srcCompat="@drawable/ic_baseline_restaurant_menu_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/dianzi"
+            app:srcCompat="@drawable/ic_baseline_invert_colors_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="7dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/gonggong"
+            app:srcCompat="@drawable/ic_baseline_add_24"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="8dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/jiyin"
+            app:srcCompat="@drawable/ic_baseline_dehaze_24"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="6dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/huazhuangping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="化妆品检测"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/shipin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="1dp"
+            android:text="食品检测"
+            app:layout_constraintStart_toEndOf="@+id/huazhuangping"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/shuizhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="1dp"
+            android:text="水质检测"
+            app:layout_constraintStart_toEndOf="@+id/shipin"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            android:layout_marginLeft="31dp" />
+
+        <TextView
+            android:id="@+id/jiliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="1dp"
+            android:text="计量标准"
+            app:layout_constraintStart_toEndOf="@+id/shuizhi"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            android:layout_marginLeft="28dp" />
+
+        <TextView
+            android:id="@+id/gengduo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="1dp"
+            android:text="更多"
+            app:layout_constraintStart_toEndOf="@+id/jiliang"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6"
+            android:layout_marginLeft="44dp" />
+        </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="412dp"
+        android:layout_height="104dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/消息"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/消息"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView8"
+            app:layout_constraintStart_toEndOf="@+id/logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_chat_bubble_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView9"
+            app:layout_constraintStart_toEndOf="@+id/消息"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_shopping_cart_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_person_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/shouye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="6dp"
+            android:text="首页"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            android:layout_marginLeft="36dp" />
+
+        <TextView
+            android:id="@+id/xiaoxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="6dp"
+            android:text="消息"
+            app:layout_constraintStart_toEndOf="@+id/shouye"
+            app:layout_constraintTop_toBottomOf="@+id/消息"
+            android:layout_marginLeft="80dp" />
+
+        <TextView
+            android:id="@+id/gouwuche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="62dp"
+            android:layout_marginTop="6dp"
+            android:text="购物车"
+            app:layout_constraintStart_toEndOf="@+id/xiaoxi"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8"
+            android:layout_marginLeft="62dp" />
+
+        <TextView
+            android:id="@+id/geren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="6dp"
+            android:text="个人"
+            app:layout_constraintStart_toEndOf="@+id/gouwuche"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9"
+            android:layout_marginLeft="60dp" />
+        </android.support.constraint.ConstraintLayout>
+
+        <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:srcCompat="@drawable/guanggao" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/con"
+        android:layout_width="409dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10">
+
+        <TextView
+            android:id="@+id/jianhuasuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="检划算"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="8dp" />
+
+        <ImageView
+            android:id="@+id/空气"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jianhuasuan"
+            app:srcCompat="@drawable/kongqi"
+            android:layout_marginLeft="16dp" />
+
+        <ImageView
+            android:id="@+id/民用建筑"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/空气"
+            app:layout_constraintTop_toBottomOf="@+id/jianhuasuan"
+            app:srcCompat="@drawable/mingyongjianzhu"
+            android:layout_marginLeft="24dp" />
+
+        <ImageView
+            android:id="@+id/辐射"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jianhuasuan"
+            app:srcCompat="@drawable/fushe"
+            android:layout_marginRight="16dp" />
+
+        <ImageView
+            android:id="@+id/水质"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/民用建筑"
+            app:layout_constraintTop_toBottomOf="@+id/jianhuasuan"
+            app:srcCompat="@drawable/water"
+            android:layout_marginLeft="24dp" />
+
+        <TextView
+            android:id="@+id/kongqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:text="空气检测"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/空气"
+            android:layout_marginLeft="24dp" />
+
+        <TextView
+            android:id="@+id/minyong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="12dp"
+            android:text="室外废弃检测"
+            app:layout_constraintStart_toEndOf="@+id/kongqi"
+            app:layout_constraintTop_toBottomOf="@+id/民用建筑"
+            android:layout_marginLeft="32dp" />
+
+        <TextView
+            android:id="@+id/shui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            android:text="水质检测"
+            app:layout_constraintStart_toEndOf="@+id/minyong"
+            app:layout_constraintTop_toBottomOf="@+id/水质"
+            android:layout_marginLeft="28dp" />
+
+        <TextView
+            android:id="@+id/fushe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="12dp"
+            android:text="辐射检测"
+            app:layout_constraintStart_toEndOf="@+id/shui"
+            app:layout_constraintTop_toBottomOf="@+id/辐射"
+            android:layout_marginLeft="45dp" />
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
