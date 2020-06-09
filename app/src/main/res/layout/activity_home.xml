@@ -284,16 +284,15 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout2"
-        android:layout_width="412dp"
-        android:layout_height="104dp"
+        android:layout_width="414dp"
+        android:layout_height="75dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
             android:id="@+id/logo"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="8dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toStartOf="@+id/消息"
@@ -303,8 +302,8 @@
 
         <ImageView
             android:id="@+id/消息"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
@@ -316,8 +315,8 @@
 
         <ImageView
             android:id="@+id/imageView8"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
@@ -329,11 +328,10 @@
 
         <ImageView
             android:id="@+id/imageView9"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView8"
             app:layout_constraintTop_toTopOf="parent"
@@ -344,46 +342,52 @@
             android:id="@+id/shouye"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginLeft="46dp"
             android:layout_marginTop="6dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
             android:text="首页"
+            app:layout_constraintEnd_toStartOf="@+id/xiaoxi"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/logo"
-            android:layout_marginLeft="36dp" />
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
 
         <TextView
             android:id="@+id/xiaoxi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
             android:layout_marginTop="6dp"
             android:text="消息"
             app:layout_constraintStart_toEndOf="@+id/shouye"
-            app:layout_constraintTop_toBottomOf="@+id/消息"
-            android:layout_marginLeft="80dp" />
+            app:layout_constraintTop_toBottomOf="@+id/消息" />
 
         <TextView
             android:id="@+id/gouwuche"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="62dp"
+            android:layout_marginStart="66dp"
+            android:layout_marginLeft="66dp"
             android:layout_marginTop="6dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
             android:text="购物车"
+            app:layout_constraintEnd_toStartOf="@+id/geren"
             app:layout_constraintStart_toEndOf="@+id/xiaoxi"
-            app:layout_constraintTop_toBottomOf="@+id/imageView8"
-            android:layout_marginLeft="62dp" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
         <TextView
             android:id="@+id/geren"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="6dp"
             android:text="个人"
             app:layout_constraintStart_toEndOf="@+id/gouwuche"
-            app:layout_constraintTop_toBottomOf="@+id/imageView9"
-            android:layout_marginLeft="60dp" />
-        </android.support.constraint.ConstraintLayout>
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+    </android.support.constraint.ConstraintLayout>
 
         <ImageView
         android:id="@+id/imageView10"
