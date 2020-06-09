@@ -11,7 +11,7 @@
         android:id="@+id/rl_loginactivity_top"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="#7B68EE" >
+        android:background="@color/colorPrimary" >
 
         <ImageView
             android:id="@+id/iv_loginactivity_back"
@@ -112,7 +112,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:background="#7B68EE"
+        android:background="@color/colorPrimary"
         android:text="登录"
         android:textColor="#fff"
         android:gravity="center"

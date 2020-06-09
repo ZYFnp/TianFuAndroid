@@ -11,7 +11,7 @@
         android:id="@+id/rl_registeractivity_top"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="#7B68EE"
+        android:background="@color/colorPrimary"
         >
         <ImageView
             android:id="@+id/iv_registeractivity_back"
@@ -117,7 +117,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="5dp"
-            android:background="#7B68EE"
+            android:background="@color/colorPrimary"
             android:textColor="#fff"
             android:text="注册"
             android:onClick="onClick"
