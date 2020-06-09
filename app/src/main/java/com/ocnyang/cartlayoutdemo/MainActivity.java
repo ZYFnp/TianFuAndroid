@@ -220,7 +220,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             for (int j = 0; j < (i + 5); j++) {
                 GoodsBean goodsBean = new GoodsBean();
-                goodsBean.setGoods_name("天府检测 " + (j + 1) + " 代");
+                goodsBean.setGoods_name("天府检测产品 " + (j + 1) + " 代");
                 goodsBean.setItemType(CartItemBean.TYPE_CHILD);
                 goodsBean.setItemId((j + 1) * 10 + j);
                 goodsBean.setGoods_price(j + 1);
