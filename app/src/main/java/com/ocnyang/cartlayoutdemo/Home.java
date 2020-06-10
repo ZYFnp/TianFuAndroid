@@ -5,11 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
+import android.widget.SearchView;
 
 public class Home extends AppCompatActivity {
 
     private ImageView imageView8;
     private ImageView imageView9;
+    private SearchView searchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,11 @@ public class Home extends AppCompatActivity {
         imageView9=findViewById(R.id.imageView9);
         imageView9.setOnClickListener(v->{
             Intent intent=new Intent(this,person.class);
+            startActivity(intent);
+        });
+        searchView=findViewById(R.id.searchView);
+        searchView.setOnClickListener(v->{
+            Intent intent=new Intent(this,search.class);
             startActivity(intent);
         });
 
