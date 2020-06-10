@@ -70,7 +70,7 @@ public class login extends AppCompatActivity implements View.OnClickListener {
                     }
                     if (match) {
                         Toast.makeText(this, "登录成功", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(this, MainActivity.class);
+                        Intent intent = new Intent(this, Home.class);
                         startActivity(intent);
                         finish();//销毁此Activity
                     } else {
