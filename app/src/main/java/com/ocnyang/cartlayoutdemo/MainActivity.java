@@ -1,5 +1,6 @@
 package com.ocnyang.cartlayoutdemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -10,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,11 +41,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private int totalCount;//购物车商品ChildItem的总数量，店铺条目不计算在内
     private int totalCheckedCount;//勾选的商品总数量，店铺条目不计算在内
     private double totalPrice;//勾选的商品总价格
+    private ImageView houtuo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        houtuo=findViewById(R.id.houtuo);
+        houtuo.setOnClickListener(v->{
+            Intent intent=new Intent(this,Home.class);
+            startActivity(intent);
+        });
 
         recyclerView = ((RecyclerView) findViewById(R.id.recycler));
         mTvTitle = ((TextView) findViewById(R.id.tv_title));
