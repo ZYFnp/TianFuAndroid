@@ -9,6 +9,7 @@ import android.widget.ImageView;
 public class Home extends AppCompatActivity {
 
     private ImageView imageView8;
+    private ImageView imageView9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,11 @@ public class Home extends AppCompatActivity {
         imageView8=findViewById(R.id.imageView8);
         imageView8.setOnClickListener(v->{
             Intent intent=new Intent(this,MainActivity.class);
+            startActivity(intent);
+        });
+        imageView9=findViewById(R.id.imageView9);
+        imageView9.setOnClickListener(v->{
+            Intent intent=new Intent(this,person.class);
             startActivity(intent);
         });
 
