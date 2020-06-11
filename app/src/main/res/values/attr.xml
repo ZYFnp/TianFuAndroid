@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ItemView">
+        <attr name="left_icon" format="integer"/>
+        <attr name="show_left_icon" format="boolean"/>
+        <attr name="left_text" format="string"/>
+        <attr name="right_text" format="string"/>
+        <attr name="show_right_arrow" format="boolean"/>
+        <attr name="show_bottom_line" format="boolean"/>
+    </declare-styleable>
+    <item name="left_icon" type="id" />
+    <item name="left_title" type="id" />
+    <item name="right_desc" type="id" />
+    <item name="right_arrow" type="id" />
+    <item name="bottom_line" type="id" />
+    <item name="root_item" type="id" />
+</resources>

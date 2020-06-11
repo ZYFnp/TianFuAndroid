@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ocnyang.cartlayoutdemo">
+    package="com.ocnyang.cartlayoutdemo" >
 
     <application
         android:allowBackup="true"
@@ -8,13 +8,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_app_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".search"></activity>
+        android:theme="@style/AppTheme" >
+        <activity android:name=".Center" >
+        </activity>
+        <activity android:name=".search" />
         <activity android:name=".person" />
         <activity android:name=".Home" />
         <activity android:name=".register" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".login">
+        <activity android:name=".login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
