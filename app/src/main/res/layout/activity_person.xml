@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="我的"
+            android:text="个人中心"
             android:textColor="@color/white_c"
             android:textSize="28dp" />
 
@@ -44,7 +44,7 @@
             android:background="@null"
             android:gravity="center"
             android:paddingTop="20dip"
-            android:text="编辑"
+            android:text="资料"
             android:textColor="@color/white_c"
             android:textSize="14sp" />
 
